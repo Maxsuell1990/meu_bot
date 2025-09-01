@@ -29,7 +29,7 @@ endereco_horario_text = (
 )
 
 def set_block(user_id: str):
-    user_blocked_until[user_id] = datetime.now() + timedelta(minutes=60)
+    user_blocked_until[user_id] = datetime.now() + timedelta(minutes=1)
 
 def set_silence(user_id: str, minutes: int = 10):
     user_silence_until[user_id] = datetime.now() + timedelta(minutes=minutes)
